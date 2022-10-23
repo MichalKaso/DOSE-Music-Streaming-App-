@@ -32,17 +32,15 @@ const Discover = () => {
         </select>
       </div>
 
-      <div className='flex flex-warp sm:justify-start justify-center gap-8'>
+      <div className="flex flex-warp sm:justify-start justify-center gap-8">
             {data?.map((song, i) => (
                 <SongCard 
                     key={song.key}
                     song={song}
-                    i = { i }
+                    i = {i}
                 />
             ))}
       </div>
-
-
     </div>
   );
 };
